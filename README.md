@@ -14,9 +14,9 @@ The script has comments throughout it, so I hope that you can follow the code. :
 * It opens the train and test datasets and extracts only the columns we want, using the "widths" variable of the read.fwf function.
 * It opens the files containing data on subjects and activities, and adds their contents to the extracted train and test datasets. Then, it combines the extracted train and test datasets.
 * It then does some housekeeping using the rattle and plyr/dplyr libraries:
-** normalises variable names inside the dataset to be lowercase and with underscores (_) instead of periods (.);
-** rearranges the data in the order of the "subjects" (the identifiers in the "subject" variable);
-** relabels the activity levels.
+  * normalises variable names inside the dataset to be lowercase and with underscores (_) instead of periods (.);
+  * rearranges the data in the order of the "subjects" (the identifiers in the "subject" variable);
+  * relabels the activity levels.
 * Finally, it creates the summary file: a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
